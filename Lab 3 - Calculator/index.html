@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="calculator" aria-label="Calculator">
+        <h1 class="title">iOS Calculator</h1>
+        <div class="display" id="display" aria-live="polite">0</div>
+
+        <div class="keys" id="keys">
+          <button class="btn btn-fn" data-action="clear">AC</button>
+          <button class="btn btn-fn" data-digit="00">00</button>
+          <button class="btn btn-fn" data-action="percent">%</button>
+          <button class="btn btn-op" data-op="/">&#247;</button>
+
+          <button class="btn btn-num" data-digit="7">7</button>
+          <button class="btn btn-num" data-digit="8">8</button>
+          <button class="btn btn-num" data-digit="9">9</button>
+          <button class="btn btn-op" data-op="*">&#215;</button>
+
+          <button class="btn btn-num" data-digit="4">4</button>
+          <button class="btn btn-num" data-digit="5">5</button>
+          <button class="btn btn-num" data-digit="6">6</button>
+          <button class="btn btn-op" data-op="-">&#8722;</button>
+
+          <button class="btn btn-num" data-digit="1">1</button>
+          <button class="btn btn-num" data-digit="2">2</button>
+          <button class="btn btn-num" data-digit="3">3</button>
+          <button class="btn btn-op" data-op="+">+</button>
+
+          <button class="btn btn-num zero" data-digit="0">0</button>
+          <button class="btn btn-num" data-action="decimal">.</button>
+          <button class="btn btn-op" data-action="equals">=</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
